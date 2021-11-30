@@ -11,5 +11,5 @@ export interface MicrosoftVersion {
   majorVersion: number;
   minorVersion: number;
   patchVersion: number;
-  fullVersion: string;
+  fullVersion: Array<number>;
 }

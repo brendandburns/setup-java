@@ -53,7 +53,7 @@ describe('findPackageForDownload', () => {
 
   it('should throw an error', async () => {
     await expect(distribution['findPackageForDownload']('8')).rejects.toThrow(
-      /Could not find satisfied version for semver */
+      /Could not find satisfied version for SemVer */
     );
   });
 });
