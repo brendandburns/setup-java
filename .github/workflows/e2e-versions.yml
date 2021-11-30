@@ -187,7 +187,7 @@ jobs:
         os: [windows-latest, ubuntu-latest]
         distribution: ['liberica', 'microsoft', 'zulu']
         version: ['11']
-        architecture: [ 'x86', 'arm64' ]
+        architecture: [ 'x86', 'aarch64' ]
         exclude:
           # Only Liberica and Zulu provide x86 arch and only for Windows and Ubuntu
           - distribution: 'liberica'
@@ -196,11 +196,11 @@ jobs:
             os: macos-latest
           - distribution: 'microsoft'
             architecture: 'x86'
-          # Only Microsoft provides arm64
+          # Only Microsoft provides aarch64
           - distribution: 'liberica'
-            architecture: 'arm64'
+            architecture: 'aarch64'
           - distribution: 'zulu'
-            architecture: 'arm64'
+            architecture: 'aarch64'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
